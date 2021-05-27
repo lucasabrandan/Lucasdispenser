@@ -1,4 +1,5 @@
- *{
+*{
+    /* Valores genericos */
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -11,54 +12,97 @@ body{
 
 a{
     color: black;
+    /* LINK SUBRAYADO */
     text-decoration: none;
 }
 
 
 ul{
+    /* ITEMS LISTA */
     list-style: none;
 }
 
+
 .contenedor{
+    /* CONTENIDO CENTRADO */
     width: 90%;
     margin: auto;
 }
 
 
-/* Estilos de navegacion */
+/* ESTILOS DE NAVEGACION */
 
 .nav-main{
-    font-size:20px;
+    /* Tamaño de fuente */
+    font-size:17px;
+    /* Permite organizar los elementos */
     display: flex;
+    /* Utilizar todo el ancho disponible */
     justify-content: space-between;
+    /* Centrado */
     align-items: center;
-    height: 60px;
-    padding: 20px 0px;
+    /* Altura por defecto a la navegacion */
+    height: 20px;
+    padding: 50px 0px;
 }
 
 .nav-brand{
-    width: 180px;
+    /* Tamaño del logo */
+    width:200px;
 }
 
-/* Navegacion izquierda */
-/* Navbar Left */
+/* Navegacion izquierda -Navbar Left - */
+
 .nav-main ul {
     display: flex;
   }
   
   .nav-main ul li {
-      /* Para separar */
+      /* Para separar un elemento del otro */
     padding: 10px;
   }
-
-
-  .nav-main ul li a:hover {
-      border-bottom:;
-
+  .nav-main ul li a{
+      padding: 2px;
   }
-    .nav-main ul.nav-menu {
+  .nav-main ul li a:hover{
+      border-bottom: 2px solid #0f540f;
+  }
+
+   .nav-main ul.nav-menu {
+       /* Para poder acercar el contenido al logo */
       flex:1;
       margin-left: 20px;  
-  }
+  } 
 
-  
+  /* ****PORTADA**** */
+ 
+  .portada{
+      width: 100%;
+      height: 550px;
+      background: url(img/1.png) no-repeat center/cover;
+      /* para elementos de bajo */
+      padding-bottom: 50px;
+    /* Para centrar el texto interno */
+      display: flex;
+      /* Centrado y debajo */
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+    }
+
+    .btn{
+        cursor: pointer;
+        display: inline-block;
+        border: 0;
+        font-weight: bold;
+        padding: 10px 20px;
+        background-color: #262626;
+        color: #ffffff;
+        font-size: 15px;
+        border: 1px solid #ffffff
+        margin: 10px 10px;
+    }
+
+    btn:hover{
+        opacity: .7;
+    }
